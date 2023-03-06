@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(14, 8, 43);
+    height: 8vh;
+}
+
+nav .logo{
+    width: 20%;
+    height: 20%;
+    /* border-radius: 10px; */
+    border: 1px solid;
+    color: #fff;
+    margin-left: 2%;
+}
+
+nav form {
+    display: flex;
+    margin: 0 5%;
+    width: 20%;
+}
+
+nav form input{
+    width: 95%;
+    border: none;
+    background-color: #d1dbe9;
+    border-radius: 4px;
+    height: 30px;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.links .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.nav-links li i{
+    display: none;
+}
+
+.links .hidden{
+    color: #000;
+}
+
+.nav-links li{
+    list-style: none;
+    margin: 0 2%;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #d1dbe9;
+}
+.nav-links .user-profile{
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin-left: auto;
+    width: 50%;
+    margin: -36.5vh 0% 0 45vh;
+    /* padding: 0 2%; */
+    /* border: 1px solid; */
+    height: 80vh;
+    /* padding: 1vh 0.5vh; */
+}
+.user-profile #hide li{
+    /* display: none; */
+}
+
+.nav-links .hidden-account-info{
+    display: none;
+}
+.hidden-account-info{
+    margin-right: -5%;
+}
+.hidden-account-info a{
+    margin-left: 2%;
+
+}
+.hidden-account-info i{
+    color: #fff;
+}
+
+.user-profile img{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin: -55px 12% 0 0;
+}
+
+.user-profile i{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 30px;
+    margin-left: auto;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.user-profile .login{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ececf3;
+    border-radius: 3px;
+    text-align: center;
+    height: 4.5vh;
+    margin: 56vh 20% 0 0;
+}
+
+.user-profile a{
+    text-align: center;
+    margin-right: auto;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+
+nav .burger{
+    display: none;
+    border: solid 1px #d1dbe9;
+    border-radius: 3px;
+}
+
+.burger div{
+    background-color: #d1dbe9;
+    height: 4px;
+    width: 30px;
+    margin: 5px;
+}
+
+
+
+
+.main{
+    width: 100%;
+}
+
+.main .container{
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: 56% 38%;
+    gap: 1.5%;
+    width: 100%;
+    margin: 0 2%;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5%;
+    background-color: #d1dbe9;
+    margin: -20px 0;
+    height: 50vh;
+    border: 2px solid;
+
+}
+
+.contact-info h2{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+
+}
+
+.contact-info p{
+    font-weight: bold;
+    font-size: small;
+}
+
+.contact-info p a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.contact-info .social-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0%;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+.social-container .social-links{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    /* border: 1px solid; */
+}
+
+.social-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-between; */
+    margin: 0.5vh 0;
+}
+
+.social-links ul li{
+    
+    margin: 2vh 10%;
+}
+
+.social-links ul li a{
+    margin-right: auto;
+    text-decoration: none;
+    color: #0000ff;
+    font-weight: bold;
+}
+.show-border{
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.social-links .card{
+    width: 95%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.social-links a{
+    text-decoration: none;
+}
+.social-links a img{
+    width: 100%;
+    margin: 2.5% 2.5% 0 2.5%;
+    height: 26vh;
+}
+
+.social-links a p{
+    color: #000;
+    font-size: xx-small;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    height: 2vh;
+    align-items: center;
+    margin: 0 0 0 2.5%;
+}
+
+.social-links a h5{
+    width: 100%;
+    height: 5vh;
+    color: #fff;
+    align-items: center;
+    background-color: #0000ff;
+    text-align: center;
+    margin: 0 0  0  2.5%;
+}
+
+.main .upper{
+    height: 100%;
+    padding: 90px 3%;
+    color: #fff;
+    width: 100%;
+    height: 40vh;
+    background-color: #0c0b5c;
+    background-image: url(../photos/harry-potter-no-bg.png);
+    background-repeat: no-repeat;
+    background-size:  60% 100%;
+    background-position: right;
+}
+
+
+
+
+.upper p{
+    margin: 3% 0;
+    font-size: larger;
+}
+
+
+
+
+
+@media only screen and (max-width: 760px){
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav .links{
+        flex-direction: column;
+    }
+
+    nav form{
+        width: 80%;
+    }
+
+    .links .nav-links{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        width: 50%;
+        height: 80vh;
+        padding: 0 2%;
+        background-color: #052f6e;
+        border: 1px solid;
+    }
+
+    .nav-links .right-link{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-links .right-link{
+        /* border: 1px solid; */
+        margin: 1.9vh 0%;
+        width: 50%;
+    }
+
+    .nav-links .right-link i{
+        color: #fff;
+        /* border: 1px solid; */
+        width: 10%;
+    }
+
+    .nav-links .right-link a{
+        margin: 0 5px 0  10px;
+    }
+    
+    .nav-links li a:hover{
+        opacity: 0.4;
+        transition: ease-in-out 0.4s;
+
+    }
+
+    .user-profile img{
+        position: absolute;
+        right: 0;
+        top: 10vh;
+    }
+
+    nav .burger{
+        display: block;
+    }
+
+    .links .links-open{
+        display: flex;
+    }
+
+    .nav-links .more-links-open{
+        display: flex;
+    }
+
+    .main .container{
+        grid-template-columns: 45% 45%;
+    }
+}
+
+
+/* @media only screen and (max-width: 660px){ */
+    /* .main .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .card{
+        margin: 5% 5px; */
+    /* } */
+/* } */
